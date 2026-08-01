@@ -1,0 +1,38 @@
+[
+  {
+    "id": "project-one",
+    "title": "Project Title Here",
+    "description": "One or two sentences describing what this project does, the problem it solves, and your role in building it. Replace this placeholder text.",
+    "techStack": ["React", "TypeScript", "Tailwind CSS"],
+    "imageUrl": "/placeholder-project.svg",
+    "repoUrl": "https://github.com/yourusername/project-one",
+    "liveUrl": "https://project-one.example.com"
+  },
+  {
+    "id": "project-two",
+    "title": "Second Project Title Here",
+    "description": "Describe the second project. Mention the interesting technical challenge and the outcome. Replace this placeholder text.",
+    "techStack": ["Node.js", "Express", "PostgreSQL"],
+    "imageUrl": "/placeholder-project.svg",
+    "repoUrl": "https://github.com/yourusername/project-two",
+    "liveUrl": "https://project-two.example.com"
+  },
+  {
+    "id": "project-three",
+    "title": "Third Project Title Here",
+    "description": "This entry has no live deployment, so its card renders without a live demo link. Replace this placeholder text.",
+    "techStack": ["Python", "FastAPI", "Docker"],
+    "imageUrl": "/placeholder-project.svg",
+    "repoUrl": "https://github.com/yourusername/project-three",
+    "liveUrl": null
+  },
+  {
+    "id": "project-four",
+    "title": "Fourth Project Title Here",
+    "description": "Describe the fourth project here, including any measurable result such as performance gains or users served. Replace this placeholder text.",
+    "techStack": ["Next.js", "Prisma", "Vercel"],
+    "imageUrl": "/placeholder-project.svg",
+    "repoUrl": "https://github.com/yourusername/project-four",
+    "liveUrl": "https://project-four.example.com"
+  }
+]

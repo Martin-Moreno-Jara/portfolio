@@ -1,0 +1,32 @@
+[
+  {
+    "category": "Frontend",
+    "skills": [
+      { "name": "React", "level": "Advanced" },
+      { "name": "TypeScript", "level": "Advanced" },
+      { "name": "Tailwind CSS", "level": "Intermediate" },
+      { "name": "HTML & CSS", "level": "Advanced" },
+      { "name": "Skill Name Here", "level": "Intermediate" }
+    ]
+  },
+  {
+    "category": "Backend",
+    "skills": [
+      { "name": "Node.js", "level": "Intermediate" },
+      { "name": "Express", "level": "Intermediate" },
+      { "name": "PostgreSQL", "level": "Intermediate" },
+      { "name": "REST APIs", "level": "Advanced" },
+      { "name": "Skill Name Here", "level": "Beginner" }
+    ]
+  },
+  {
+    "category": "Tools & DevOps",
+    "skills": [
+      { "name": "Git & GitHub", "level": "Advanced" },
+      { "name": "Docker", "level": "Beginner" },
+      { "name": "Vite", "level": "Intermediate" },
+      { "name": "CI/CD (GitHub Actions)", "level": "Beginner" },
+      { "name": "Skill Name Here" }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white font-sans text-neutral-600 antialiased;
+  }
+
+  /* Single, consistent focus treatment for every interactive element.
+     Mouse clicks stay clean; keyboard navigation is always visible. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-indigo-600 ring-offset-2 ring-offset-white;
+  }
+}
