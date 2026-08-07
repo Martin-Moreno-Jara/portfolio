@@ -1,32 +1,68 @@
 [
   {
-    "category": "Frontend",
+    "category": "Languages",
     "skills": [
-      { "name": "React", "level": "Advanced" },
-      { "name": "TypeScript", "level": "Advanced" },
-      { "name": "Tailwind CSS", "level": "Intermediate" },
-      { "name": "HTML & CSS", "level": "Advanced" },
-      { "name": "Skill Name Here", "level": "Intermediate" }
+      { "name": "Python" },
+      { "name": "JavaScript / TypeScript" },
+      { "name": "Go" },
+      { "name": "SQL" }
     ]
   },
   {
-    "category": "Backend",
+    "category": "Backend & Frameworks",
     "skills": [
-      { "name": "Node.js", "level": "Intermediate" },
-      { "name": "Express", "level": "Intermediate" },
-      { "name": "PostgreSQL", "level": "Intermediate" },
-      { "name": "REST APIs", "level": "Advanced" },
-      { "name": "Skill Name Here", "level": "Beginner" }
+      { "name": "FastAPI" },
+      { "name": "Flask" },
+      { "name": "Node.js" },
+      { "name": "Express.js" },
+      { "name": "React" }
     ]
   },
   {
-    "category": "Tools & DevOps",
+    "category": "Architecture & Concepts",
     "skills": [
-      { "name": "Git & GitHub", "level": "Advanced" },
-      { "name": "Docker", "level": "Beginner" },
-      { "name": "Vite", "level": "Intermediate" },
-      { "name": "CI/CD (GitHub Actions)", "level": "Beginner" },
-      { "name": "Skill Name Here" }
+      { "name": "System Design" },
+      { "name": "REST APIs" },
+      { "name": "Microservices" },
+      { "name": "Computer Networks" }
+    ]
+  },
+  {
+    "category": "Tools & Infrastructure",
+    "skills": [
+      { "name": "Git / GitHub" },
+      { "name": "Linux" },
+      { "name": "Docker" },
+      { "name": "Google Cloud Platform" },
+      { "name": "Firebase" },
+      { "name": "Nginx" },
+      { "name": "MongoDB" },
+      { "name": "Prometheus" },
+      { "name": "Grafana" },
+      { "name": "Google Colab" }
+    ]
+  },
+  {
+    "category": "Machine Learning & Data",
+    "skills": [
+      { "name": "TensorFlow / Keras" },
+      { "name": "PyTorch" },
+      { "name": "scikit-learn" },
+      { "name": "Convolutional Neural Networks" },
+      { "name": "Transfer Learning" },
+      { "name": "Computer Vision" },
+      { "name": "Model Evaluation" },
+      { "name": "NumPy" },
+      { "name": "Pandas" },
+      { "name": "Matplotlib / Seaborn" }
+    ]
+  },
+  {
+    "category": "Spoken Languages",
+    "skills": [
+      { "name": "Spanish", "level": "Native" },
+      { "name": "English", "level": "Advanced" },
+      { "name": "German", "level": "Intermediate" }
     ]
   }
 ]

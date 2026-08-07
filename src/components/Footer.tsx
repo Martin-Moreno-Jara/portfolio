@@ -1,8 +1,10 @@
-/* PLACEHOLDER: replace these three hrefs and the email with your real contact details. */
 const contactLinks = [
-  { label: 'Email', href: 'mailto:you@example.com' },
-  { label: 'GitHub', href: 'https://github.com/yourusername' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/yourusername' },
+  { label: 'Email', href: 'mailto:martin.moreno.j04@gmail.com' },
+  { label: 'GitHub', href: 'https://github.com/Martin-Moreno-Jara' },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/martin-moreno-jara-250977242/',
+  },
 ]
 
 export default function Footer() {
@@ -10,7 +12,7 @@ export default function Footer() {
     <footer className="border-t border-neutral-200">
       <div className="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-10 text-sm sm:flex-row sm:items-center sm:justify-between">
         <p className="text-neutral-500">
-          &copy; {new Date().getFullYear()} Your Name Here
+          &copy; {new Date().getFullYear()} Martin Moreno Jara
         </p>
         <ul className="flex gap-6">
           {contactLinks.map((link) => (

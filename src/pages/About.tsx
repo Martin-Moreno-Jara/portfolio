@@ -1,38 +1,7 @@
-/* PLACEHOLDER: replace every entry below with your real history. */
-const experience = [
-  {
-    period: '20XX — Present',
-    role: 'Job Title Here',
-    org: 'Company Name Here',
-    detail:
-      'Describe what you owned, the stack you worked in, and one concrete result — a metric, a launch, or a system you improved.',
-  },
-  {
-    period: '20XX — 20XX',
-    role: 'Previous Job Title Here',
-    org: 'Previous Company Name Here',
-    detail:
-      'Describe your responsibilities and a notable achievement from this role.',
-  },
-]
+import projectsData from '../data/projects.json'
+import type { Project } from '../types'
 
-const education = [
-  {
-    period: '20XX — 20XX',
-    role: 'Degree Name Here',
-    org: 'University Name Here',
-    detail: 'Optional note about focus area, honours, or relevant coursework.',
-  },
-]
-
-const certifications = [
-  {
-    period: '20XX',
-    role: 'Certification Name Here',
-    org: 'Issuing Organization Here',
-    detail: 'Optional one-line note, or delete this section if not applicable.',
-  },
-]
+const projects = projectsData as Project[]
 
 interface TimelineEntry {
   period: string
@@ -41,12 +10,31 @@ interface TimelineEntry {
   detail: string
 }
 
+const education: TimelineEntry[] = [
+  {
+    period: '2022 — Present · Expected graduation June 2027',
+    role: 'Systems and Computer Engineering',
+    org: 'Universidad Nacional de Colombia · Bogotá, Colombia',
+    detail:
+      'Relevant coursework: Software Architecture, Data Structures & Algorithms, Computer Networks, and Introduction to Intelligent Systems (Machine Learning & Deep Learning).',
+  },
+]
+
+// The project timeline is derived from the same data that drives /projects,
+// so the two pages can never drift apart.
+const projectTimeline: TimelineEntry[] = projects.map((project) => ({
+  period: project.period,
+  role: project.title,
+  org: project.subtitle,
+  detail: project.description,
+}))
+
 function Timeline({ entries }: { entries: TimelineEntry[] }) {
   return (
     <ol className="mt-6 space-y-8">
       {entries.map((entry) => (
         <li
-          key={`${entry.org}-${entry.period}`}
+          key={`${entry.role}-${entry.period}`}
           className="border-l border-neutral-200 pl-6"
         >
           <p className="text-xs uppercase tracking-wide text-neutral-500">
@@ -74,22 +62,21 @@ export default function About() {
 
       <div className="mt-6 space-y-4 leading-relaxed text-neutral-600">
         <p>
-          This is your extended bio. Open with how you got into this work and
-          what you have been building lately. Replace this placeholder text.
+          I'm a Systems and Computer Engineering student at Universidad Nacional
+          de Colombia in Bogotá, with an expected graduation in June 2027. My
+          coursework has centred on software architecture, data structures and
+          algorithms, computer networks, and intelligent systems.
         </p>
         <p>
-          Add a second paragraph about how you like to work — collaboration
-          style, the kinds of problems that hold your attention, and what you
-          are looking for in your next role.
+          The work I enjoy most sits at the infrastructure layer — deciding how
+          services talk to each other, where the boundaries belong, and how you
+          know the system is healthy. In practice that has meant API gateways and
+          reverse proxies, secured service-to-service communication,
+          containerized deployments on Google Cloud Platform, and telemetry
+          pipelines built on Prometheus and Grafana. Alongside that I've been
+          training deep-learning models for computer vision.
         </p>
       </div>
-
-      <section className="mt-16">
-        <h2 className="text-sm font-medium uppercase tracking-wide text-neutral-900">
-          Experience
-        </h2>
-        <Timeline entries={experience} />
-      </section>
 
       <section className="mt-16">
         <h2 className="text-sm font-medium uppercase tracking-wide text-neutral-900">
@@ -100,9 +87,9 @@ export default function About() {
 
       <section className="mt-16">
         <h2 className="text-sm font-medium uppercase tracking-wide text-neutral-900">
-          Certifications
+          Project Timeline
         </h2>
-        <Timeline entries={certifications} />
+        <Timeline entries={projectTimeline} />
       </section>
     </div>
   )

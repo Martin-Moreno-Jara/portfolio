@@ -12,26 +12,25 @@ npm run build    # type-check + production build to dist/
 npm run preview  # serve the production build locally
 ```
 
-## Replacing the placeholder content
+## Editing the content
 
-Everything ships as clearly-labeled placeholder copy. To find all of it:
-
-```bash
-grep -rn "Here\|yourusername\|you@example.com\|20XX" src/ index.html
-```
-
-The files to edit, in order of importance:
+Content is populated from the CV. Where to change things:
 
 | What | Where |
 | --- | --- |
-| Projects (title, description, tech, links, image) | `src/data/projects.json` |
+| Projects (title, subtitle, period, description, tech, links) | `src/data/projects.json` |
 | Skills, grouped by category | `src/data/skills.json` |
-| Name, title, tagline, intro, CTAs | `src/pages/Home.tsx` |
-| Bio, experience, education, certifications | `src/pages/About.tsx` |
+| Tagline, intro, CTAs | `src/pages/Home.tsx` |
+| Bio and education | `src/pages/About.tsx` |
 | Email, GitHub, LinkedIn | `src/components/Footer.tsx` |
-| Name in the header | `src/components/Navbar.tsx` |
 | Page title, meta description | `index.html` |
-| Resume PDF | replace `public/resume-placeholder.pdf` |
+| Resume PDF | replace `public/Martin-Moreno-Jara-CV.pdf` |
+
+The About page's project timeline is derived from `projects.json`, so adding a project
+there updates both `/projects` and `/about`.
+
+**Still a placeholder:** project images. All three entries point at
+`/placeholder-project.svg`. Drop real screenshots into `public/` and update `imageUrl`.
 
 ### Data shapes
 
@@ -45,12 +44,15 @@ The files to edit, in order of importance:
   "techStack": ["React", "TypeScript"],
   "imageUrl": "/placeholder-project.svg",  // put real images in public/
   "repoUrl": "https://github.com/…",
+  "repoLabel": "Open notebook",            // optional; defaults to "View code"
   "liveUrl": "https://…"                   // null hides the "Live demo" link
 }
 ```
 
-`skills.json` — array of `{ "category": "Frontend", "skills": [{ "name": "React", "level": "Advanced" }] }`.
-`level` is optional and must be `Beginner`, `Intermediate`, or `Advanced`. Types live in `src/types.ts`.
+`skills.json` — array of `{ "category": "Languages", "skills": [{ "name": "Python" }] }`.
+`level` is optional (`Beginner`, `Intermediate`, `Advanced`, `Native`) and is currently used
+only for spoken languages, since the CV assigns no proficiency to technical skills.
+Types live in `src/types.ts`.
 
 ## Deploying to Vercel
 

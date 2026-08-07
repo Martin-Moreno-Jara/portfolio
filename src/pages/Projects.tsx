@@ -11,11 +11,8 @@ export default function Projects() {
         Projects
       </h1>
       <p className="mt-4 max-w-2xl leading-relaxed text-neutral-600">
-        A selection of things I have built. Edit{' '}
-        <code className="rounded bg-neutral-100 px-1 py-0.5 text-sm">
-          src/data/projects.json
-        </code>{' '}
-        to replace these entries.
+        Backend and cloud architecture work, plus a deep-learning project in
+        computer vision. Each one links out to its source.
       </p>
 
       <div className="mt-12 grid gap-8 sm:grid-cols-2">

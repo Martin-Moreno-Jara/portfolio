@@ -36,8 +36,7 @@ export default function Navbar() {
           to="/"
           className="rounded text-sm font-semibold tracking-tight text-neutral-900"
         >
-          {/* PLACEHOLDER: replace with your name */}
-          Your Name Here
+          Martin Moreno Jara
         </NavLink>
 
         <ul className="hidden gap-8 sm:flex">

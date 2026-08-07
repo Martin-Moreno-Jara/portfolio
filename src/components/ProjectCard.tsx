@@ -5,20 +5,34 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const { title, description, techStack, imageUrl, repoUrl, liveUrl } = project
+  const {
+    title,
+    subtitle,
+    period,
+    description,
+    techStack,
+    imageUrl,
+    repoUrl,
+    repoLabel,
+    liveUrl,
+  } = project
 
   return (
     <article className="group flex flex-col overflow-hidden rounded-lg border border-neutral-200 transition-colors hover:border-neutral-300">
       <img
         src={imageUrl}
-        alt={`Screenshot of ${title}`}
+        alt={`${title} — project image`}
         loading="lazy"
         className="aspect-[16/10] w-full bg-neutral-100 object-cover"
       />
 
       <div className="flex flex-1 flex-col gap-4 p-6">
         <div className="space-y-2">
-          <h3 className="text-base font-medium text-neutral-900">{title}</h3>
+          <div className="flex flex-wrap items-baseline justify-between gap-x-3">
+            <h3 className="text-base font-medium text-neutral-900">{title}</h3>
+            <p className="text-xs text-neutral-500">{period}</p>
+          </div>
+          <p className="text-sm text-neutral-500">{subtitle}</p>
           <p className="text-sm leading-relaxed text-neutral-600">{description}</p>
         </div>
 
@@ -40,7 +54,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             rel="noopener noreferrer"
             className="rounded font-medium text-indigo-600 underline-offset-4 hover:underline"
           >
-            View code
+            {repoLabel ?? 'View code'}
             <span className="sr-only"> for {title}</span>
           </a>
           {liveUrl && (

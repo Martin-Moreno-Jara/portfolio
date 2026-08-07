@@ -1,38 +1,51 @@
 [
   {
-    "id": "project-one",
-    "title": "Project Title Here",
-    "description": "One or two sentences describing what this project does, the problem it solves, and your role in building it. Replace this placeholder text.",
-    "techStack": ["React", "TypeScript", "Tailwind CSS"],
+    "id": "runpath",
+    "title": "Runpath",
+    "subtitle": "Backend & Cloud Architecture",
+    "period": "September — December 2025",
+    "description": "A microservices backend built around an Express.js API gateway and an Nginx reverse proxy, with a FastAPI and Firebase authentication service. Internal service-to-service traffic is secured with self-signed certificates, and the containerized services were deployed as Pods on Google Cloud Platform.",
+    "techStack": [
+      "Python",
+      "FastAPI",
+      "Express.js",
+      "Nginx",
+      "Firebase",
+      "Docker",
+      "Google Cloud Platform"
+    ],
     "imageUrl": "/placeholder-project.svg",
-    "repoUrl": "https://github.com/yourusername/project-one",
-    "liveUrl": "https://project-one.example.com"
-  },
-  {
-    "id": "project-two",
-    "title": "Second Project Title Here",
-    "description": "Describe the second project. Mention the interesting technical challenge and the outcome. Replace this placeholder text.",
-    "techStack": ["Node.js", "Express", "PostgreSQL"],
-    "imageUrl": "/placeholder-project.svg",
-    "repoUrl": "https://github.com/yourusername/project-two",
-    "liveUrl": "https://project-two.example.com"
-  },
-  {
-    "id": "project-three",
-    "title": "Third Project Title Here",
-    "description": "This entry has no live deployment, so its card renders without a live demo link. Replace this placeholder text.",
-    "techStack": ["Python", "FastAPI", "Docker"],
-    "imageUrl": "/placeholder-project.svg",
-    "repoUrl": "https://github.com/yourusername/project-three",
+    "repoUrl": "https://github.com/orgs/ArquiSoft-Grupo-2B/repositories",
     "liveUrl": null
   },
   {
-    "id": "project-four",
-    "title": "Fourth Project Title Here",
-    "description": "Describe the fourth project here, including any measurable result such as performance gains or users served. Replace this placeholder text.",
-    "techStack": ["Next.js", "Prisma", "Vercel"],
+    "id": "mascotas-bogota",
+    "title": "Mascotas Bogotá",
+    "subtitle": "Core Backend Development",
+    "period": "April — August 2025",
+    "description": "The core REST API for a community-driven pet-tracking platform, handling CRUD operations for user publications. I designed the MongoDB schemas for location-based data and user reports, and built an observability pipeline with Prometheus and Grafana for real-time application health and performance metrics.",
+    "techStack": ["Python", "Flask", "MongoDB", "Prometheus", "Grafana"],
     "imageUrl": "/placeholder-project.svg",
-    "repoUrl": "https://github.com/yourusername/project-four",
-    "liveUrl": "https://project-four.example.com"
+    "repoUrl": "https://github.com/orgs/MascotasBogota/repositories",
+    "liveUrl": null
+  },
+  {
+    "id": "brain-tumor-mri",
+    "title": "Brain Tumor MRI Classification",
+    "subtitle": "Deep Learning & Computer Vision",
+    "period": "May — June 2025",
+    "description": "A 3-person project benchmarking a custom PyTorch CNN against EfficientNetB0–B4 transfer-learning models to sort 5,700+ brain MRI scans into four categories: glioma, meningioma, pituitary, and no tumor. The tuned EfficientNetB3 reached 100% validation accuracy — 28 points above a zero-shot Gemini baseline.",
+    "techStack": [
+      "Python",
+      "TensorFlow/Keras",
+      "PyTorch",
+      "EfficientNet",
+      "scikit-learn",
+      "OpenCV"
+    ],
+    "imageUrl": "/placeholder-project.svg",
+    "repoUrl": "https://colab.research.google.com/drive/1wjiBIG7RyFdGLcU3ydaUlmcWqC-WezUF?usp=sharing",
+    "repoLabel": "Open notebook",
+    "liveUrl": null
   }
 ]

@@ -11,11 +11,8 @@ export default function Skills() {
         Skills
       </h1>
       <p className="mt-4 leading-relaxed text-neutral-600">
-        Tools and technologies I work with. Edit{' '}
-        <code className="rounded bg-neutral-100 px-1 py-0.5 text-sm">
-          src/data/skills.json
-        </code>{' '}
-        to replace these entries.
+        The languages, frameworks, and infrastructure I work with, grouped by
+        where they sit in the stack.
       </p>
 
       <div className="mt-12 space-y-12">
