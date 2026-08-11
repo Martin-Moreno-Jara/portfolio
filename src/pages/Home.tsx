@@ -23,7 +23,7 @@ export default function Home() {
         infrastructure layer: designing microservices behind an API gateway,
         building APIs in FastAPI and Flask, and deploying containerized services
         to Google Cloud Platform. Alongside that I've trained deep-learning models
-        for computer vision, most recently a classifier for brain MRI scans.
+        for computer vision, like a classifier for brain MRI scans.
       </p>
 
       <div className="mt-10 flex flex-col gap-3 sm:flex-row">

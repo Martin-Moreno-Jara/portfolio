@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export default function NotFound() {
   return (
@@ -12,10 +12,9 @@ export default function NotFound() {
       </p>
       <Link
         to="/"
-        className="mt-8 inline-flex rounded font-medium text-indigo-600 underline-offset-4 hover:underline"
-      >
+        className="mt-8 inline-flex rounded font-medium text-indigo-600 underline-offset-4 hover:underline">
         Back to home
       </Link>
     </div>
-  )
+  );
 }

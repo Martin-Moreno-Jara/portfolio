@@ -12,9 +12,10 @@
       "Nginx",
       "Firebase",
       "Docker",
+      "API Gateway",
       "Google Cloud Platform"
     ],
-    "imageUrl": "/placeholder-project.svg",
+    "imageUrl": "https://github.com/ArquiSoft-Grupo-2B/.github/raw/main/profile/imgs/cc_view_prototype4.jpg",
     "repoUrl": "https://github.com/orgs/ArquiSoft-Grupo-2B/repositories",
     "liveUrl": null
   },
@@ -25,7 +26,7 @@
     "period": "April — August 2025",
     "description": "The core REST API for a community-driven pet-tracking platform, handling CRUD operations for user publications. I designed the MongoDB schemas for location-based data and user reports, and built an observability pipeline with Prometheus and Grafana for real-time application health and performance metrics.",
     "techStack": ["Python", "Flask", "MongoDB", "Prometheus", "Grafana"],
-    "imageUrl": "/placeholder-project.svg",
+    "imageUrl": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*-x95WVdkdoDnzeSj4HsNxg.png",
     "repoUrl": "https://github.com/orgs/MascotasBogota/repositories",
     "liveUrl": null
   },
@@ -43,7 +44,7 @@
       "scikit-learn",
       "OpenCV"
     ],
-    "imageUrl": "/placeholder-project.svg",
+    "imageUrl": "/brain MRI.png",
     "repoUrl": "https://colab.research.google.com/drive/1wjiBIG7RyFdGLcU3ydaUlmcWqC-WezUF?usp=sharing",
     "repoLabel": "Open notebook",
     "liveUrl": null

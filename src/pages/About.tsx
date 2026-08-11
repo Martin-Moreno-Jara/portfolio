@@ -1,24 +1,24 @@
-import projectsData from '../data/projects.json'
-import type { Project } from '../types'
+import projectsData from "../data/projects.json";
+import type { Project } from "../types";
 
-const projects = projectsData as Project[]
+const projects = projectsData as Project[];
 
 interface TimelineEntry {
-  period: string
-  role: string
-  org: string
-  detail: string
+  period: string;
+  role: string;
+  org: string;
+  detail: string;
 }
 
 const education: TimelineEntry[] = [
   {
-    period: '2022 — Present · Expected graduation June 2027',
-    role: 'Systems and Computer Engineering',
-    org: 'Universidad Nacional de Colombia · Bogotá, Colombia',
+    period: "2022 — Present · Expected graduation June 2027",
+    role: "Systems and Computer Engineering",
+    org: "Universidad Nacional de Colombia · Bogotá, Colombia",
     detail:
-      'Relevant coursework: Software Architecture, Data Structures & Algorithms, Computer Networks, and Introduction to Intelligent Systems (Machine Learning & Deep Learning).',
+      "Relevant coursework: Software Architecture and Software Engineering, Data Structures & Algorithms, Databases, Computer Networks, and Introduction to Intelligent Systems (Machine Learning & Deep Learning).",
   },
-]
+];
 
 // The project timeline is derived from the same data that drives /projects,
 // so the two pages can never drift apart.
@@ -27,7 +27,7 @@ const projectTimeline: TimelineEntry[] = projects.map((project) => ({
   role: project.title,
   org: project.subtitle,
   detail: project.description,
-}))
+}));
 
 function Timeline({ entries }: { entries: TimelineEntry[] }) {
   return (
@@ -35,8 +35,7 @@ function Timeline({ entries }: { entries: TimelineEntry[] }) {
       {entries.map((entry) => (
         <li
           key={`${entry.role}-${entry.period}`}
-          className="border-l border-neutral-200 pl-6"
-        >
+          className="border-l border-neutral-200 pl-6">
           <p className="text-xs uppercase tracking-wide text-neutral-500">
             {entry.period}
           </p>
@@ -50,7 +49,7 @@ function Timeline({ entries }: { entries: TimelineEntry[] }) {
         </li>
       ))}
     </ol>
-  )
+  );
 }
 
 export default function About() {
@@ -64,17 +63,27 @@ export default function About() {
         <p>
           I'm a Systems and Computer Engineering student at Universidad Nacional
           de Colombia in Bogotá, with an expected graduation in June 2027. My
-          coursework has centred on software architecture, data structures and
-          algorithms, computer networks, and intelligent systems.
+          coursework has centred on software architecture and engineering,
+          databases, data structures and algorithms, computer networks, and
+          intelligent systems.
         </p>
-        <p>
-          The work I enjoy most sits at the infrastructure layer — deciding how
-          services talk to each other, where the boundaries belong, and how you
-          know the system is healthy. In practice that has meant API gateways and
-          reverse proxies, secured service-to-service communication,
-          containerized deployments on Google Cloud Platform, and telemetry
-          pipelines built on Prometheus and Grafana. Alongside that I've been
-          training deep-learning models for computer vision.
+        <p className="text-justify">
+          The work I enjoy most sits at the backend and infrastructure layer -
+          designing and implementing the microservices and APIs that power
+          applications, and then carefully choosing the cloud infrastructure
+          that supports them. <br></br>
+          In practice that has meant developing APIs and implementing software
+          architectural elements to create an efficient and safe communication
+          between them, such as API gateways, reverse proxies and secure
+          channels, as well as monitoring systems that help track the health of
+          the system, like telemetry pipelines built using Prometheus and
+          Grafana. All in order to create robust and scalable software systems
+          that can be deployed in cloud environments, with containerized
+          deployments on platforms such as GCP. Alongside that, I've picked an
+          interest in machine learning and computer vision, and have been
+          studying and building deep learning pipelines, such as a classifier
+          for brain MRI scans, and a pipeline for detecting and classifying
+          objects in images.
         </p>
       </div>
 
@@ -92,5 +101,5 @@ export default function About() {
         <Timeline entries={projectTimeline} />
       </section>
     </div>
-  )
+  );
 }
