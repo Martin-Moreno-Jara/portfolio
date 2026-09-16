@@ -1,0 +1,1 @@
+- Para la funcionalidad de decargar cv, al momento de darle click al botón, pregunta si descargarlo en inglés o en español. Para cada opción descarga el respectivo CV
