@@ -4,9 +4,13 @@
     "skills": [
       { "name": "Python" },
       { "name": "JavaScript / TypeScript" },
-      { "name": "Go" },
-      { "name": "SQL" }
+      { "name": "SQL" },
+      { "name": "C++ (Arduino Framework)" }
     ]
+  },
+  {
+    "category": "Databases",
+    "skills": [{ "name": "MongoDB" }, { "name": "SQLite" }]
   },
   {
     "category": "Backend & Frameworks",
@@ -25,7 +29,12 @@
       { "name": "REST APIs" },
       { "name": "Microservices" },
       { "name": "Databases" },
-      { "name": "Computer Networks" }
+      { "name": "Computer Networks" },
+      { "name": "Distributed Systems" },
+      { "name": "HTTP" },
+      { "name": "MQTT" },
+      { "name": "TLS/SSL" },
+      { "name": "Pub/Sub Messaging" }
     ]
   },
   {

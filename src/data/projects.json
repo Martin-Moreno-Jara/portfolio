@@ -1,5 +1,26 @@
 [
   {
+    "id": "intelligent pot",
+    "title": "Intelligent Pot",
+    "subtitle": "IoT and MQTT",
+    "period": "May — July 2026",
+    "description": "An IoT planter built on an ESP32-S3 that samples five environmental sensors — soil moisture, temperature, humidity, ambient light, and air quality — and publishes telemetry over TLS-secured MQTT to a HiveMQ Cloud broker. A retained state topic lets a client connecting late immediately receive the device's current configuration, and a command topic closes the control loop, letting the dashboard trigger irrigation and configure lighting and audio remotely.",
+    "techStack": [
+      "C++",
+      "Arduino",
+      "ESP32-S3",
+      "MQTT",
+      "HiveMQ",
+      "TLS/SSL",
+      "Pub/Sub Messaging",
+      "Software Architectural design"
+    ],
+
+    "imageUrl": "https://camo.githubusercontent.com/27d5249675bf407f0e732c607d9c7b9b4ca3466716429a4c9e324b0ddf35e236/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f614c696859756f746167552f6d617872657364656661756c742e6a7067",
+    "repoUrl": "https://github.com/Martin-Moreno-Jara/intelligent_pot",
+    "liveUrl": null
+  },
+  {
     "id": "runpath",
     "title": "Runpath",
     "subtitle": "Backend & Cloud Architecture",
