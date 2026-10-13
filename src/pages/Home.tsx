@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import CvDownload from '../components/CvDownload'
 
 export default function Home() {
   return (
@@ -33,13 +34,7 @@ export default function Home() {
         >
           View Projects
         </Link>
-        <a
-          href="/Martin-Moreno-Jara-CV.pdf"
-          download
-          className="inline-flex items-center justify-center rounded-md border border-neutral-300 px-5 py-2.5 text-sm font-medium text-neutral-900 transition-colors hover:border-neutral-400"
-        >
-          Download Resume
-        </a>
+        <CvDownload />
       </div>
     </div>
   )

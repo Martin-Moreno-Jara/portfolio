@@ -1,0 +1,18 @@
+{
+  "defaultLang": "en",
+  "contactEmail": "martin.moreno.j04@gmail.com",
+  "files": [
+    {
+      "lang": "en",
+      "label": "English",
+      "href": "/cv/Martin-Moreno-Jara-CV-EN.pdf",
+      "fileName": "Martin-Moreno-Jara-CV-EN.pdf"
+    },
+    {
+      "lang": "es",
+      "label": "Español",
+      "href": "/cv/Martin-Moreno-Jara-CV-ES.pdf",
+      "fileName": "Martin-Moreno-Jara-CV-ES.pdf"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Constitution — Portoflio
 
-**Version:** 1.0.0 · **Ratified:** 10-10-2026 · **Last amended:** 10-10-2026
+**Version:** 1.1.0 · **Ratified:** 10-10-2026 · **Last amended:** 12-10-2026
 
 ## 1. Purpose
 
@@ -41,6 +41,7 @@ as showcasing my work for job applications.
 | Data               | local json files   |
 | Infra              | Vercel             |
 | Dependencies       | Tailwind CSS, Vite |
+| Testing (dev only) | Vitest, jsdom, Testing Library (react, dom, user-event, jest-dom) |
 
 ## 4. Quality gates
 
@@ -79,3 +80,4 @@ Undocumented deviations are defects.
 | Version | Date       | Change               | Approved by        |
 | ------- | ---------- | -------------------- | ------------------ |
 | 1.0.0   | 10-10-2026 | Initial ratification | Martin Moreno Jara |
+| 1.1.0   | 12-10-2026 | §3: allow Vitest + Testing Library as dev-only dependencies (DEV-01, specs/001-download-cv/plan.md) | Martin Moreno Jara |

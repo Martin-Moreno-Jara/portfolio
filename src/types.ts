@@ -27,3 +27,15 @@ export interface SkillCategory {
   category: string
   skills: Skill[]
 }
+
+export type CvLanguage = 'en' | 'es'
+
+export interface CvFile {
+  lang: CvLanguage
+  /** Menu label: "English" | "Español". */
+  label: string
+  /** Public URL, e.g. "/cv/Martin-Moreno-Jara-CV-EN.pdf". */
+  href: string
+  /** Name the browser saves the file as. */
+  fileName: string
+}

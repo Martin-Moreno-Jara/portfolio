@@ -97,11 +97,11 @@ explicitly says to skip it.
 ## 8. Commands
 
 ```bash
-npm install    # install deps
+npm install         # install deps
 npm run dev         # run locally
-{{test}}        # all tests
-{{test-one}}    # single test file
-npm run build        # build
+npm test            # all tests
+npx vitest run tests/<file>.test.ts  # single test file
+npm run build       # build
 ```
 
 ## 9. Code conventions
